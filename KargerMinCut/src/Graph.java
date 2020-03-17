@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class Graph {
     private HashMap<Integer, Vertex> vertices;
 
-    Graph(File file) throws FileNotFoundException { //TODO: import data from text file;
+    Graph(File file) throws FileNotFoundException { 
         vertices = new HashMap<>();
         Scanner member = new Scanner(file);
         while(member.hasNextLine()) {

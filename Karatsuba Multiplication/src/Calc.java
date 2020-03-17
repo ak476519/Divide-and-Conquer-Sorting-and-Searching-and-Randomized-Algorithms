@@ -4,13 +4,13 @@ public class Calc {
     String i;
     String j;
     BigInteger karatsu;
-    Calc(String i, String j) {
+    Calc(String i, String j) { 
         this.i = i;
         this.j = j;
         karatsu = karatsu(i, j);
     }
     public BigInteger karatsu(String i, String j) {
-        //TODO: finish rest of code;
+        //TODO: refractor and make forked version;
         if (i.length() == 0 || j.length() == 0) return BigInteger.ZERO;
         if (i.length() == 1 && j.length() == 1) {
             long res = Integer.parseInt(i) * Integer.parseInt(j);
